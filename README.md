@@ -55,3 +55,12 @@ To install all dependencies:
 conda env create -f environment.yml
 conda activate atlasai-rag-env
 jupyter lab
+
+---
+
+📬 Author
+Robert Graham
+
+GitHub: @r-aaron-graham
+HuggingFace: raarongraham
+LinkedIn: r-aaron-graham
