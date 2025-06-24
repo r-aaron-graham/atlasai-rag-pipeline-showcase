@@ -1,0 +1,30 @@
+name: atlasai-rag-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - jupyterlab
+  - ipywidgets
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - openai
+  - faiss-cpu
+  - langchain
+  - llama-index
+  - fastapi
+  - uvicorn
+  - python-docx
+  - docopt
+  - pyyaml
+  - tiktoken
+  - pip
+  - pip:
+      - unstructured
+      - azureml-sdk
+      - transformers
+      - huggingface_hub
+      - rich
+      - httpx
