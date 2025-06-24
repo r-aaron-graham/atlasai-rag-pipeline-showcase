@@ -2,7 +2,9 @@
 
 A modular and advanced suite of Jupyter Notebooks demonstrating real-world Retrieval-Augmented Generation (RAG) strategies — from optimization and deployment to hybrid retrieval and CI/CD integration. Built to reflect robust engineering and architectural awareness for AI-driven infrastructure, this showcase addresses performance bottlenecks, model limitations, and real deployment scenarios.
 
-> 📌 Prepared for AtlasAI Interview — by Robert Graham
+> 📌 Prepared for AtlasAI Interview  
+> 👤 Author: **Robert Graham**  
+> 📨 [r-aaron-graham (GitHub)](https://github.com/r-aaron-graham) | [LinkedIn](https://linkedin.com/in/r-aaron-graham) | [HuggingFace](https://huggingface.co/raarongraham)
 
 ---
 
@@ -28,8 +30,8 @@ This repository provides a comprehensive exploration of:
 - [Advanced RAG Strategies](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/optimization/Advanced_RAG_Strategies.ipynb)
 
 ### 🔌 Integration
-- [LangChain ＋ LlamaIndex](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/integration/LangChain_LlamaIndex_RAG_Integration.ipynb)
-- [Hybrid BM25 ＋ Vector](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/integration/Hybrid_BM25_Vector_RAG_Integration.ipynb)
+- [LangChain + LlamaIndex](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/integration/LangChain_LlamaIndex_RAG_Integration.ipynb)
+- [Hybrid BM25 + Vector](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/integration/Hybrid_BM25_Vector_RAG_Integration.ipynb)
 - [FAISS Vector Search](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/integration/FAISS_VectorDB_RAG_Integration.ipynb)
 
 ### 🚀 Deployment
@@ -43,11 +45,11 @@ This repository provides a comprehensive exploration of:
 - [Azure DevOps Pipeline](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/cicd/AzureDevOps_RAG_CICD_Notebook.ipynb)
 
 ### 🧬 .NET Hybrid
-- [Hybrid RAG (.NET ＋ OpenAI)](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/dotnet/Hybrid_RAG_DotNet_OpenAI.ipynb)
+- [Hybrid RAG (.NET + OpenAI)](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/dotnet/Hybrid_RAG_DotNet_OpenAI.ipynb)
 
 ---
 
-## 🛠️ Environment
+## 🛠️ Environment Setup
 
 To install all dependencies:
 
@@ -55,12 +57,3 @@ To install all dependencies:
 conda env create -f environment.yml
 conda activate atlasai-rag-env
 jupyter lab
-
----
-
-📬 Author
-Robert Graham
-
-GitHub: @r-aaron-graham
-HuggingFace: raarongraham
-LinkedIn: r-aaron-graham
