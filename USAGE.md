@@ -1,6 +1,22 @@
-# 🚀 How to Run These Notebooks
+# 🚀 Usage Guide: Running the RAG Showcase
 
-## Step 1: Clone the Repository
+This guide will walk you through setting up, exploring, and extending the Retrieval-Augmented Generation (RAG) notebooks provided in this repository.
+
+---
+
+## 🧰 Prerequisites
+
+- Python 3.10+
+- Conda (recommended)
+- JupyterLab or VSCode
+- OpenAI API Key (stored as `OPENAI_API_KEY` in env)
+
+---
+
+## 1️⃣ Setup Instructions
+
+### 🔹 Clone the Repository
+
 ```bash
 git clone https://github.com/your-username/atlasai-rag-pipeline-showcase.git
 cd atlasai-rag-pipeline-showcase
@@ -8,16 +24,11 @@ cd atlasai-rag-pipeline-showcase
 conda env create -f environment.yml
 conda activate atlasai-rag-env
 
+OPENAI_API_KEY=your-key-here
+
 jupyter lab
 
+notebooks/00_index.ipynb
 
----
 
-If none of these extras are needed, you’re now **ready to package and push the full repository**.
 
-Would you like me to:
-
-- Bundle the **entire folder structure** and content into a downloadable `.zip` for upload?
-- Or walk you through creating the repo in GitHub and pushing it manually?
-
-Let me know how you'd like to wrap it!
