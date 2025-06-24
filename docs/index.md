@@ -1,10 +1,14 @@
 ---
 title: AtlasAI RAG Showcase
+layout: default
 ---
 
-{% include_relative ../README.md %}
+# AtlasAI RAG Showcase 🌐
 
-## 🔗 Notebook Showcase
+Welcome! This site accompanies the GitHub repository  
+**[`r-aaron-graham/atlasai-rag-pipeline-showcase`](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase)**.
+
+## 🔗 Notebook Index
 
 ### Optimization
 - [RAG Pipeline Optimization](../notebooks/optimization/RAG_Pipeline_Optimization.ipynb)
@@ -28,3 +32,8 @@ title: AtlasAI RAG Showcase
 
 ### .NET Hybrid
 - [Hybrid RAG (.NET ＋ OpenAI)](../notebooks/dotnet/Hybrid_RAG_DotNet_OpenAI.ipynb)
+
+---
+
+> Click any link to view the rendered notebook on GitHub.  
+> Need a quick demo? Open them in Colab or Codespaces directly from the repo.
