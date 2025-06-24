@@ -1,0 +1,41 @@
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Environment files
+.env
+*.env
+.env.*
+venv/
+.venv/
+*.log
+
+# VSCode / PyCharm / IDE
+.vscode/
+.idea/
+*.swp
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.bak
+*.tmp
+*.temp
+
+# Data or secrets (optional)
+data/
+secrets/
+apikeys.json
+token.json
+openai_key.txt
