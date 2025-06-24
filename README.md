@@ -35,3 +35,8 @@ This repository provides a comprehensive exploration of:
 ├── assets/                         # (optional) Diagrams, screenshots, visuals
 ├── environment.yml                 # Reproducible environment for all notebooks
 └── README.md                       # You're here
+
+
+GitHub: @r-aaron-graham
+HuggingFace: raarongraham
+LinkedIn: r-aaron-graham 
