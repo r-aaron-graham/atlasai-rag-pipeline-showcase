@@ -25,7 +25,7 @@ This repository provides a comprehensive exploration of:
 ## 📘 Notebook Showcase
 
 ### 🔧 Optimization
-- [RAG Pipeline Optimization](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/optimization/RAG_Pipeline_Optimization.ipynb)
+- [RAG Pipeline Optimization](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/optimization/RAG_Pipeline_Optimization.ipynb)
 - [Creative RAG Optimization](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/optimization/Creative_RAG_Optimization.ipynb)
 - [Advanced RAG Strategies](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/optimization/Advanced_RAG_Strategies.ipynb)
 
