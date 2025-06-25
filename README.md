@@ -24,31 +24,28 @@ This repository provides a comprehensive exploration of:
 
 ## 📘 Notebook Showcase
 
-### 📂 Index Notebook
-- [Notebook Index](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/00_index.ipynb)
-
 ### 🔧 Optimization
 - [RAG Pipeline Optimization](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/optimization/RAG_Pipeline_Optimization.ipynb)
-- [Creative RAG Optimization](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/optimization/Creative_RAG_Optimization.ipynb)
-- [Advanced RAG Strategies](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/optimization/Advanced_RAG_Strategies.ipynb)
+- [Creative RAG Optimization](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/optimization/Creative_RAG_Optimization.ipynb)
+- [Advanced RAG Strategies](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/optimization/Advanced_RAG_Strategies.ipynb)
 
 ### 🔌 Integration
 - [LangChain + LlamaIndex](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/integration/LangChain_LlamaIndex_RAG_Integration.ipynb)
-- [Hybrid BM25 + Vector](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/integration/Hybrid_BM25_Vector_RAG_Integration.ipynb)
-- [FAISS Vector Search](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/integration/FAISS_VectorDB_RAG_Integration.ipynb)
+- [Hybrid BM25 + Vector](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/integration/Hybrid_BM25_Vector_RAG_Integration.ipynb)
+- [FAISS Vector Search](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/integration/FAISS_VectorDB_RAG_Integration.ipynb)
 
 ### 🚀 Deployment
-- [Docker Deployment](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/deployment/Docker_RAG_Deployment_Notebook.ipynb)
-- [Helm / AKS Deployment](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/deployment/Helm_AKS_RAG_Deployment_Notebook.ipynb)
+- [Docker Deployment](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/deployment/Docker_RAG_Deployment_Notebook.ipynb)
+- [Helm / AKS Deployment](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/deployment/Helm_AKS_RAG_Deployment_Notebook.ipynb)
 
 ### 💻 Frontend
-- [.NET Blazor Frontend](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/frontend/RAG_Blazor_Frontend_Notebook.ipynb)
+- [.NET Blazor Frontend](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/frontend/RAG_Blazor_Frontend_Notebook.ipynb)
 
 ### 🔁 CI / CD
-- [Azure DevOps Pipeline](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/cicd/AzureDevOps_RAG_CICD_Notebook.ipynb)
+- [Azure DevOps Pipeline](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/cicd/AzureDevOps_RAG_CICD_Notebook.ipynb)
 
 ### 🧬 .NET Hybrid
-- [Hybrid RAG (.NET + OpenAI)](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/dotnet/Hybrid_RAG_DotNet_OpenAI.ipynb)
+- [Hybrid RAG (.NET + OpenAI)](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/dotnet/Hybrid_RAG_DotNet_OpenAI.ipynb)
 
 ---
 
