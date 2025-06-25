@@ -1,6 +1,6 @@
 # 🧠 AtlasAI RAG Pipeline Showcase
 
-A modular and advanced suite of Jupyter Notebooks demonstrating real-world Retrieval-Augmented Generation (RAG) strategies — from optimization and deployment to hybrid retrieval and CI/CD integration. Built to reflect robust engineering and architectural awareness for AI-driven infrastructure, this showcase addresses performance bottlenecks, model limitations, and real deployment scenarios.
+A modular and advanced suite of Jupyter Notebooks demonstrating real-world Retrieval-Augmented Generation (RAG) strategies — from optimization and deployment to hybrid retrieval and CI/CD integration.
 
 > 📌 Prepared for AtlasAI Interview  
 > 👤 Author: **Robert Graham**  
@@ -23,6 +23,9 @@ This repository provides a comprehensive exploration of:
 ---
 
 ## 📘 Notebook Showcase
+
+### 📂 Index Notebook
+- [Notebook Index](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/00_index.ipynb)
 
 ### 🔧 Optimization
 - [RAG Pipeline Optimization](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/optimization/RAG_Pipeline_Optimization.ipynb)
@@ -57,3 +60,22 @@ To install all dependencies:
 conda env create -f environment.yml
 conda activate atlasai-rag-env
 jupyter lab
+```
+
+---
+
+## ⚠️ Troubleshooting Notebook Links
+
+If you encounter 404 errors when accessing notebooks, ensure you are using the correct paths:
+
+- **Notebooks are located in top-level folders**, not under `notebooks/` except for the index.
+- All links above use the correct case and directory structure.
+- Check that you are on the `main` branch or adjust links if using a different branch.
+
+**Example of a correct URL:**
+
+```
+https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/optimization/RAG_Pipeline_Optimization.ipynb
+```
+
+If you continue to experience issues, please verify that the files exist in the remote repository and that your local changes have been committed and pushed.
