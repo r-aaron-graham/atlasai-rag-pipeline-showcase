@@ -33,7 +33,7 @@ This repository provides a comprehensive exploration of:
 - [Advanced RAG Strategies](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/optimization/Advanced_RAG_Strategies.ipynb)
 
 ### 🔌 Integration
-- [LangChain + LlamaIndex]([https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/integration/LangChain_LlamaIndex_RAG_Integration.ipynb])
+- [LangChain + LlamaIndex](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/integration/LangChain_LlamaIndex_RAG_Integration.ipynb)
 - [Hybrid BM25 + Vector](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/integration/Hybrid_BM25_Vector_RAG_Integration.ipynb)
 - [FAISS Vector Search](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/integration/FAISS_VectorDB_RAG_Integration.ipynb)
 
