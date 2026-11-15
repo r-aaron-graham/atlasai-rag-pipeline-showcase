@@ -1,78 +1,31 @@
-# 🧠 AtlasAI RAG Pipeline Showcase
+# AtlasAI RAG Pipeline Showcase
 
-A modular and advanced suite of Jupyter Notebooks demonstrating real-world Retrieval-Augmented Generation (RAG) strategies — from optimization and deployment to hybrid retrieval and CI/CD integration.
+A notebook collection with a runnable FastAPI reviewer example. See [USAGE.md](USAGE.md) and the [notebooks](notebooks) for the research and deployment examples.
 
-> 📌 Prepared for AtlasAI Interview  
-> 👤 Author: **Robert Graham**  
-> 📨 [GitHub](https://github.com/r-aaron-graham) | [LinkedIn](https://linkedin.com/in/r-aaron-graham) | [HuggingFace](https://huggingface.co/raarongraham)
+## Run the reviewer API
 
----
-
-## 🔍 Overview
-
-This repository provides a comprehensive exploration of:
-
-- ✅ **Chunking strategies** to eliminate trimming and reduce latency  
-- ✅ **Hybrid search integration** using FAISS, BM25, and LlamaIndex  
-- ✅ **LangChain pipelines** for modular orchestration  
-- ✅ **Azure & Docker deployment** including AKS + Helm  
-- ✅ **Frontend integration** with .NET Blazor  
-- ✅ **CI/CD with Azure DevOps** for reproducible infra  
-- ✅ **Infra-aware design** targeting GPT-4o, o3-mini, and throughput constraints
-
----
-
-## 📘 Notebook Showcase
-
-### 🔧 Optimization
-- [RAG Pipeline Optimization](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/optimization/RAG_Pipeline_Optimization.ipynb)
-- [Creative RAG Optimization](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/optimization/Creative_RAG_Optimization.ipynb)
-- [Advanced RAG Strategies](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/optimization/Advanced_RAG_Strategies.ipynb)
-
-### 🔌 Integration
-- [LangChain + LlamaIndex](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/integration/LangChain_LlamaIndex_RAG_Integration.ipynb)
-- [Hybrid BM25 + Vector](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/integration/Hybrid_BM25_Vector_RAG_Integration.ipynb)
-- [FAISS Vector Search](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/integration/FAISS_VectorDB_RAG_Integration.ipynb)
-
-### 🚀 Deployment
-- [Docker Deployment](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/deployment/Docker_RAG_Deployment_Notebook.ipynb)
-- [Helm / AKS Deployment](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/deployment/Helm_AKS_RAG_Deployment_Notebook.ipynb)
-
-### 💻 Frontend
-- [.NET Blazor Frontend](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/frontend/RAG_Blazor_Frontend_Notebook.ipynb)
-
-### 🔁 CI / CD
-- [Azure DevOps Pipeline](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/cicd/AzureDevOps_RAG_CICD_Notebook.ipynb)
-
-### 🧬 .NET Hybrid
-- [Hybrid RAG (.NET + OpenAI)](https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/notebooks/dotnet/Hybrid_RAG_DotNet_OpenAI.ipynb)
-
----
-
-## 🛠️ Environment Setup
-
-To install all dependencies:
-
-```bash
-conda env create -f environment.yml
-conda activate atlasai-rag-env
-jupyter lab
+```sh
+python -m pip install -c requirements.lock -r requirements.txt
+python -m uvicorn serve.main:app --host 127.0.0.1 --port 8000
 ```
 
----
+In a second terminal, run:
 
-## ⚠️ Troubleshooting Notebook Links
-
-If you encounter 404 errors when accessing notebooks, ensure you are using the correct paths:
-
-- **Notebooks are located in top-level folders**, not under `notebooks/` except for the index.
-- All links above use the correct case and directory structure.
-- Check that you are on the `main` branch or adjust links if using a different branch.
-
-**Example of a correct URL:**
-
-```
-https://github.com/r-aaron-graham/atlasai-rag-pipeline-showcase/blob/main/optimization/RAG_Pipeline_Optimization.ipynb
+```sh
+curl -H 'Content-Type: application/json' -d '{"query":"retention"}' http://127.0.0.1:8000/ask
 ```
 
-If you continue to experience issues, please verify that the files exist in the remote repository and that your local changes have been committed and pushed.
+The default path retrieves one synthetic policy by keyword and returns its source ID. Set `ATLASAI_PROVIDER=openai` and `OPENAI_API_KEY` to use the optional direct generation path. That path sends the query to OpenAI and needs separate verification. Keep the local server on loopback.
+
+## Deployment verification
+
+Use Python 3.12 on Linux. CI and Docker apply the checked-in dependency constraints.
+
+```sh
+python -m pip install -c requirements.lock -r requirements-dev.txt
+python -m pytest -q
+docker build -t reviewer-smoke .
+docker run --rm -p 127.0.0.1:8000:8000 reviewer-smoke
+```
+
+Expected result: `retention` returns a cited synthetic retention policy. Unknown topics return no sources. The optional live OpenAI path generates directly from the supplied prompt. The notebooks are separate research and deployment examples.

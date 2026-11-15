@@ -1,24 +1,9 @@
-# 📦 Minimal FastAPI app to serve your RAG pipeline
-FROM python:3.10-slim
-
-# Set environment
-ENV PYTHONDONTWRITEBYTECODE=1
-ENV PYTHONUNBUFFERED=1
-
-# Set work directory
+FROM python:3.12-slim
 WORKDIR /app
-
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
-
-# Copy project files
-COPY . /app/
-
-# Install dependencies
-RUN pip install --no-cache-dir --upgrade pip \
- && pip install --no-cache-dir -r requirements.txt
-
-# Start FastAPI app
-CMD ["uvicorn", "serve.main:app", "--host", "0.0.0.0", "--port", "8000"]
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+COPY requirements.txt requirements.lock ./
+RUN python -m pip install --no-cache-dir -c requirements.lock -r requirements.txt
+COPY serve/main.py ./serve/
+USER 10001:10001
+EXPOSE 8000
+CMD ["python","-m","uvicorn","serve.main:app","--host","0.0.0.0","--port","8000"]
